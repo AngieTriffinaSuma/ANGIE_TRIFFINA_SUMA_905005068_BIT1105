@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Leone Football Agency - About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Additional styles for the layout */
+        .page-container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            gap: 30px;
+        }
+        
+        .image-sidebar {
+            flex: 0 0 350px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            align-self: flex-start;
+            position: sticky;
+            top: 100px;
+        }
+        
+        .image-section {
+            margin-bottom: 30px;
+        }
+        
+        .image-section h3 {
+            color: #0A1F3C;
+            border-bottom: 3px solid #0072C6;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .featured-image {
+            width: 100%;
+            height: 250px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        
+        .featured-image i {
+            font-size: 4rem;
+            color: #0072C6;
+        }
+        
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .gallery-item {
+            height: 120px;
+            background-color: #e9ecef;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #dee2e6;
+        }
+        
+        .gallery-item i {
+            font-size: 2rem;
+            color: #1EB53A;
+        }
+        
+        .sidebar-content {
+            flex: 1;
+        }
+        
+        @media (max-width: 1024px) {
+            .page-container {
+                flex-direction: column;
+            }
+            
+            .image-sidebar {
+                flex: 0 0 auto;
+                width: 100%;
+                position: static;
+                order: 2;
+            }
+            
+            .sidebar-content {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>FOOTBALL AGENCY SIERRA LEONE</h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="players.html">PLAYERS</a></li>
+                <li><a href="matches.html">MATCHES</a></li>
+                <li><a href="about.html" class="active">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="page-header">
+            <h2>ABOUT US</h2>
+        </section>
+
+        <div class="page-container">
+            
+        <aside class="image-sidebar">
+                <div class="image-section">
+                    <h3>AGENCY HIGHLIGHTS</h3>
+                    <div class="featured-image">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <p class="image-caption">Our team of professional agents and scouts</p>
+                    
+                    <div class="image-gallery">
+                        <div class="gallery-item">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="gallery-item">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <div class="gallery-item">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <div class="gallery-item">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="image-section">
+                    <h3>OUR ACHIEVEMENTS</h3>
+                    <div class="featured-image">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <p class="image-caption">Recognized for excellence in player development</p>
+                    
+                    <div style="margin-top: 20px; padding: 15px; background-color: #f0f7ff; border-radius: 6px; border-left: 4px solid #0072C6;">
+                        <h4 style="color: #0A1F3C; margin-bottom: 10px;">Quick Stats</h4>
+                        <p><i class="fas fa-user" style="color: #0072C6; margin-right: 8px;"></i> <strong>50+</strong> Players Represented</p>
+                        <p><i class="fas fa-globe" style="color: #1EB53A; margin-right: 8px;"></i> <strong>15+</strong> Countries</p>
+                        <p><i class="fas fa-handshake" style="color: #FCD116; margin-right: 8px;"></i> <strong>30+</strong> Club Partnerships</p>
+                    </div>
+                </div>
+            </aside>
+            
+            <div class="sidebar-content">
+                <section class="vision-section">
+                    <h3>VISION STATEMENT</h3>
+                    <div class="vision-content">
+                        <p>chasing your dream or a club seeking top talent you are in the right place</p>
+                        <p>Our vision is to become the leading football agency in Sierra Leone, developing world-class talent and creating pathways to international success for our players.</p>
+                    </div>
+                </section>
+
+                <section class="statements-section">
+                    <h3>OUR MISSION & VALUES</h3>
+                    <div class="statements-grid">
+                        <div class="statement">
+                            <h4>STATEMENT 1</h4>
+                            <p>To discover and nurture football talent across Sierra Leone</p>
+                        </div>
+                        <div class="statement">
+                            <h4>STATEMENT 2</h4>
+                            <p>To provide professional representation for all our players</p>
+                        </div>
+                        <div class="statement">
+                            <h4>STATEMENT 3</h4>
+                            <p>To create international opportunities for Sierra Leonean talent</p>
+                        </div>
+                        <div class="statement">
+                            <h4>STATEMENT 4</h4>
+                            <p>To promote Sierra Leone football on the global stage</p>
+                        </div>
+                        <div class="statement">
+                            <h4>STATEMENT 5</h4>
+                            <p>To ensure fair treatment and contracts for all players</p>
+                        </div>
+                        <div class="statement">
+                            <h4>STATEMENT 6</h4>
+                            <p>To support player development on and off the field</p>
+                        </div>
+                        <div class="statement">
+                            <h4>STATEMENT 7</h4>
+                            <p>To foster partnerships with clubs worldwide</p>
+                        </div>
+                        <div class="statement">
+                            <h4>STATEMENT 8</h4>
+                            <p>To contribute to the growth of football in Sierra Leone</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>COPYRIGHT © 2025 SIERRA LEONE FOOTBALL AGENCY</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
